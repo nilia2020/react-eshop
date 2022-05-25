@@ -1,11 +1,11 @@
 import React from "react";
 import Layout from "../containers/Layout";
-import Login from "../containers/Login";
+import Login from "../pages/Login";
 import "../styles/global.css";
 import { Routes, Route } from "react-router-dom";
 import Home from "../pages/Home";
 import NotFound from "../pages/NotFound";
-import PasswordRecovery from "../pages/RecoveryPassword";
+import PasswordRecovery from "../pages/PasswordRecovery";
 import SendEmail from "../pages/SendEmail";
 import NewPassword from "../pages/NewPassword";
 import MyAccount from "../pages/MyAccount";
