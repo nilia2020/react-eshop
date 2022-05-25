@@ -5,14 +5,16 @@ import RecoveryPassword from "../containers/RecoveryPassword";
 import "../styles/global.css";
 import { Routes, Route } from "react-router-dom";
 import Home from "../pages/Home";
+import NotFound from "../pages/NotFound";
 
 const App = () => {
   return (
     <Layout>
       <Routes>
-        <Route path="/" component={<Home />} />
-        <Route path="login" component={<Login />} />
-        <Route path="recovery-password" component={<RecoveryPassword />} />
+        <Route path="/" element={<Home />} />
+        <Route path="login" element={<Login />} />
+        <Route path="recovery-password" element={<RecoveryPassword />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Layout>
   );
